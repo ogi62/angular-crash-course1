@@ -1,1 +1,2 @@
-<p>tasks works!</p>
+<p *ngFor="let task of tasks">{{ task.text }}!</p>
+<h2 *ngFor="let task of tasks">{{task.day}} <span>{{ task.reminder }}</span></h2>
