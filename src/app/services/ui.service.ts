@@ -6,7 +6,7 @@ import { Observable, Subject } from 'rxjs';
 })
 export class UiService {
   private showAddTask: boolean = false;
-  private subject = new Subject<any>; 
+  private subject = new Subject<any>(); 
 
   constructor() { }
 
@@ -17,5 +17,5 @@ export class UiService {
 
   onToggle(): Observable<any> {
     return this.subject.asObservable();
-  }
+  } 
 }
